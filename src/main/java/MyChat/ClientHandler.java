@@ -16,7 +16,7 @@ public class ClientHandler {
     private long timeStart;
     private String name;
 
-    private static final Logger logger = Logger.getLogger(MyMain.class);
+    private static final Logger logger = Logger.getLogger(ClientHandler.class);
     String getName() {
         return name;
     }
