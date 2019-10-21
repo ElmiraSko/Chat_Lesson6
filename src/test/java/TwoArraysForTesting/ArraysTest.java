@@ -22,12 +22,7 @@ public class ArraysTest {
         RuntimeException ex = new RuntimeException(); // эталонные данные
         assertSame("Метод не работает", ex, Arrays.afterFour(arr));
     }
-    @Test
-    public void testAfterFour4() throws RuntimeException {
-        int[] arr = {2, 7, 6, 3, 1, 9}; // входные данные
-       // RuntimeException ex = new RuntimeException(); // эталонные данные
-       // assertThrows(RuntimeException.class, Arrays.afterFour(arr));
-    }
+
 //==================================================================================
     @Test
     public void testOnlyOneAndFour(){
@@ -37,18 +32,18 @@ public class ArraysTest {
     @Test
     public void testOnlyOneAndFour2(){
         int[] arr = {4, 4, 1, 1, 5, 1}; // входные данные
-        assertFalse(Arrays.onlyOneAndFour(arr));  // должны получить true
+        assertFalse(Arrays.onlyOneAndFour(arr));  // должны получить false
     }
 
     @Test
     public void testOnlyOneAndFour3(){
         int[] arr = {1, 1, 1, 1, 1, 1}; // входные данные
-        assertFalse(Arrays.onlyOneAndFour(arr));  // должны получить true
+        assertFalse(Arrays.onlyOneAndFour(arr));  // должны получить false
     }
 
     @Test
     public void testOnlyOneAndFour4(){
         int[] arr = {4, 4, 4, 4}; // входные данные
-        assertFalse(Arrays.onlyOneAndFour(arr));  // должны получить true
+        assertFalse(Arrays.onlyOneAndFour(arr));  // должны получить false
     }
 }
