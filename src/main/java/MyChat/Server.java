@@ -11,7 +11,7 @@ import org.apache.log4j.Logger;
     private final int PORT = 8189;
     private ConnectBase connectBase;  // ссылка на объект ConnectBase
     private List<ClientHandler> clients; //clients- ссылка на список(ArrayList) будущих клиентов
-    private static final Logger logger = Logger.getLogger(MyMain.class);
+    private static final Logger logger = Logger.getLogger(Server.class);
 
     // объект ConnectBase позволит получить соединение с бд, содержит "методы-запросы"
     ConnectBase getConnectBase() {
